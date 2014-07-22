@@ -1,0 +1,28 @@
+{
+  "name": "gulp-semiflat",
+  "version": "0.0.1",
+  "description": "Amend the base path of gulp vinyl files based on a Glob to produce a somewhat flatter file tree at the destination.",
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "flatten",
+    "relative",
+    "base",
+    "path"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bholloway/gulp-semiflat"
+  },
+  "author": "Ben Holloway",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bholloway/gulp-semiflat/issues"
+  },
+  "homepage": "https://github.com/bholloway/gulp-semiflat",
+  "main": "index.js",
+  "dependencies": {
+    "through2": "~0.5.1",
+    "minimatch": "~0.4.0"
+  }
+}

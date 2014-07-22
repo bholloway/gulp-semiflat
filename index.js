@@ -1,5 +1,5 @@
 var through = require('through2');
-var minimatch = require("minimatch");
+var minimatch = require('minimatch');
 
 /**
  * Amend the base path of gulp vinyl files based on a <code>glob</code> to produce a somewhat flatter file tree at the
@@ -8,11 +8,11 @@ var minimatch = require("minimatch");
  * @returns {Transform} A transform stream for gulp
  */
 module.exports = function(glob) {
+  'use strict';
   return through.obj(function(file, encoding, done) {
     var source   = minimatch.makeRe(file.cwd + glob.replace(/^\.?\//, '')).source.replace('$', '');
     var pattern  = new RegExp(source);
     var analysis = pattern.exec(file.path);
-console.log(source);
     if (analysis) {
       file.base = analysis[0];
     }

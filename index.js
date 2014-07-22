@@ -10,7 +10,7 @@ var path = require('path');
  */
 module.exports = function(glob) {
   'use strict';
-  var source  = minimatch.makeRe(path.resolve(glob)).source.replace('$', '');
+  var source  = minimatch.makeRe(path.resolve(glob)).source.replace('$', '').replace(/\\\//g, '[\\\\\\/]');
   var pattern = new RegExp(source);
   return through.obj(function(file, encoding, done) {
     var analysis = pattern.exec(file.path);

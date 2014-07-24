@@ -9,8 +9,9 @@ Install with [npm](https://npmjs.org/package/gulp-semiflat).
 
 ```
 npm install --save-dev gulp-semiflat
+```
 
-## Examples
+## Usage
 
 ```js
 var gulp = require('gulp');

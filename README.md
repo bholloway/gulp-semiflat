@@ -19,7 +19,7 @@ var gulpSemiFlat = require('gulp-semiflat');
 
 gulp.task('default', function () {
   return gulp.src('js/**/lib/**/*.js')  // base will be '/js'
-    .pipe(gulpSemiFlat('js/**/lib'))    // base is now '/js/../lib'
+    .pipe(gulpSemiFlat('js/**/lib'))    // base is now '/js/.../lib'
     .pipe(gulp.dest('build/js');
 });
 ```

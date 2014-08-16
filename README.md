@@ -23,3 +23,6 @@ gulp.task('default', function () {
     .pipe(gulp.dest('build/js');
 });
 ```
+
+Note that trailing ** in the glob will match the full path to the file. This will give the limiting case of
+[gulp-flatten](https://www.npmjs.org/package/gulp-flatten).

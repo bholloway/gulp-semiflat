@@ -1,6 +1,6 @@
 {
   "name": "gulp-semiflat",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Amend the base path of gulp vinyl files based on a Glob to produce a somewhat flatter file tree at the destination.",
   "keywords": [
     "gulp",
